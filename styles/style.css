@@ -138,7 +138,7 @@ a:hover {
   margin-block-start: 60px;
   /* padding: 0 20px;*/
   font-size: 18px;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 @media (width <= 375px) {
@@ -172,6 +172,7 @@ a:hover {
   line-height: 23.4px;
   font-size: 18px;
   color: var(--title-decor);
+  margin-block-end: 20px;
 }
 
 .content__what {
