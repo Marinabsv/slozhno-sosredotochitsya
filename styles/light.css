@@ -10,3 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+.theme_light .rec {
+  display: none;
+}
+
+.theme_auto .rec {
+  display: none;
+}
