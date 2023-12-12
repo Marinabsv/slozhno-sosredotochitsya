@@ -16,6 +16,25 @@
   background-attachment: fixed;
 }
 
+@media (prefers-color-scheme: theme_dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #F1B2CE;
+    --accent-color: #DB00FF;
+    --main-font: "IBM Plex Mono";
+    --accent-bg-color: #FF0070;
+    --shadow-color: #FF0070;
+    --corner-color:#FF0070;
+    --content-title:#FF0070;
+    --title-decor:#000028;
+    --bg-image:url(../images/cover-image-dark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+    }
+}
+
 .theme_dark .rec {
   position: absolute;
   font-family: var(--main-font);
