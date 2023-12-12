@@ -1,15 +1,14 @@
-
 .page.theme_dark {
   --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #DB00FF;
+  --text-color: #f1b2ce;
+  --accent-color: #db00ff;
   --main-font: "IBM Plex Mono";
-  --accent-bg-color: #FF0070;
-  --shadow-color: #FF0070;
-  --corner-color:#FF0070;
-  --content-title:#FF0070;
-  --title-decor:#000028;
-  --bg-image:url(../images/cover-image-dark.png);
+  --accent-bg-color: #ff0070;
+  --shadow-color: #ff0070;
+  --corner-color: #ff0070;
+  --content-title: #ff0070;
+  --title-decor: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,20 +18,20 @@
 @media (prefers-color-scheme: theme_dark) {
   :root {
     --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --accent-color: #DB00FF;
+    --text-color: #f1b2ce;
+    --accent-color: #db00ff;
     --main-font: "IBM Plex Mono";
-    --accent-bg-color: #FF0070;
-    --shadow-color: #FF0070;
-    --corner-color:#FF0070;
-    --content-title:#FF0070;
-    --title-decor:#000028;
-    --bg-image:url(../images/cover-image-dark.png);
+    --accent-bg-color: #ff0070;
+    --shadow-color: #ff0070;
+    --corner-color: #ff0070;
+    --content-title: #ff0070;
+    --title-decor: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;   
-    }
+    background-attachment: fixed;
+  }
 }
 
 .theme_dark .rec {
@@ -53,7 +52,7 @@
   height: 15px;
   background-color: #ff0070;
   border-radius: 50%;
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  filter: drop-shadow(0px 0px 4px #ff0070);
   inset-block-end: 18%;
   inset-inline-start: 120%;
 }
