@@ -11,8 +11,13 @@
   */
 }
 
-.theme_light .rec {
+@media (prefers-color-scheme: theme-light) {
+  .theme_light .rec {
   display: none;
+  }
+  .theme_auto .rec {
+    display: none;
+}
 }
 
 .theme_auto .rec {

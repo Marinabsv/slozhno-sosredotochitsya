@@ -8,14 +8,11 @@
   --corner-color: #ff0070;
   --content-title: #ff0070;
   --title-decor: #000028;
+  --buttom-color:rgba(255, 0, 112, 0.40);
   --bg-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: theme_dark) {
+@media (prefers-color-scheme: theme-dark) {
   :root {
     --bg-color: #000028;
     --text-color: #f1b2ce;
@@ -27,32 +24,7 @@
     --content-title: #ff0070;
     --title-decor: #000028;
     --bg-image: url(../images/cover-image-dark.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
   }
 }
 
-.theme_dark .rec {
-  position: absolute;
-  font-family: var(--main-font);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  color: var(--corner-color);
-  inset-block-end: 95%;
-  inset-inline-start: 91%;
-}
 
-.rec::after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #ff0070;
-  border-radius: 50%;
-  filter: drop-shadow(0px 0px 4px #ff0070);
-  inset-block-end: 18%;
-  inset-inline-start: 120%;
-}
