@@ -3,16 +3,17 @@
   --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #ffc2e6;
-  --main-font: "IBM Plex Mono";
+  --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
   --accent-bg-color: #ff8dcb;
   --shadow-color: #ff0070;
-  --corner-color:#353430;
-  --content-title:#353430;
-  --title-decor:#353430;
-  --bg-image:url(../images/cover-image-light.png);
+  --corner-color: #353430;
+  --content-title: #353430;
+  --title-decor: #353430;
+  --buttom-color: rgba(50, 49, 45, 0.4);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
-@media (width <= 1024px) {
+@media (width < 1024px) {
   :root {
     --shadow-color: #FF8DCB;
   }

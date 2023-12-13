@@ -12,7 +12,7 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-@media (prefers-color-scheme: theme-dark) {
+@media (prefers-color-scheme: theme_dark) {
   :root {
     --bg-color: #000028;
     --text-color: #f1b2ce;
