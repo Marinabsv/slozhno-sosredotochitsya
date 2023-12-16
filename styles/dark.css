@@ -2,7 +2,7 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #db00ff;
-  --main-font: "IBM Plex Mono";
+  --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
   --accent-bg-color: #ff0070;
   --shadow-color: #ff0070;
   --corner-color: #ff0070;
@@ -17,7 +17,7 @@
     --bg-color: #000028;
     --text-color: #f1b2ce;
     --accent-color: #db00ff;
-    --main-font: "IBM Plex Mono";
+    --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
     --accent-bg-color: #ff0070;
     --shadow-color: #ff0070;
     --corner-color: #ff0070;
