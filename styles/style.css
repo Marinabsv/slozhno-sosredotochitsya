@@ -96,6 +96,7 @@
 .header__theme-menu-button:hover {
   border: 1px solid var(--buttom-color);
   cursor: pointer;
+  padding-bottom: 5px;
 }
 
 .header__theme-menu-button:focus {

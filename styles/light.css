@@ -1,14 +1,24 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
-.page .theme_light {
 
+.page.theme_light {
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ffc2e6;
+  --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+  --accent-bg-color: #ff8dcb;
+  --shadow-color: #ff0070;
+  --corner-color: #353430;
+  --content-title: #353430;
+  --title-decor: #353430;
+  --buttom-color: rgba(50, 49, 45, 0.4);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
-@media (prefers-color-scheme: theme_light) {
+.theme_light .rec {
+  display: none;
+  }
+
+@media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
     --text-color: #353430;
@@ -22,12 +32,7 @@
     --buttom-color: rgba(50, 49, 45, 0.4);
     --bg-image: url(../images/cover-image-light.png);
   }
-
-  .theme_light .rec {
+   .rec {
   display: none;
   }
 }
-
-.theme_light .rec {
-  display: none;
-  }

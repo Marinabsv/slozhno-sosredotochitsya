@@ -12,18 +12,19 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-@media (prefers-color-scheme: theme_dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000028;
-    --text-color: #f1b2ce;
-    --accent-color: #db00ff;
-    --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
-    --accent-bg-color: #ff0070;
-    --shadow-color: #ff0070;
-    --corner-color: #ff0070;
-    --content-title: #ff0070;
-    --title-decor: #000028;
-    --bg-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
+  --accent-color: #db00ff;
+  --main-font: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+  --accent-bg-color: #ff0070;
+  --shadow-color: #ff0070;
+  --corner-color: #ff0070;
+  --content-title: #ff0070;
+  --title-decor: #000028;
+  --buttom-color:rgba(255, 0, 112, 0.40);
+  --bg-image: url(../images/cover-image-dark.png);
   }
 }
 
