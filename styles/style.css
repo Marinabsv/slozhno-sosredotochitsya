@@ -346,7 +346,7 @@ a:hover {
 
 @media (width <=375px) {
   .content__how h3 {
-    margin: 0px;
+    margin: 0;
   }
   .content__how p {
     padding-block-end: 4px;
@@ -433,6 +433,12 @@ a:hover {
   align-self: center;
 }
 
+@media (width <768px) {
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -481,6 +487,6 @@ a:hover {
   }
 }
 
-* {
+/** {
   outline: 1px solid green;
-}
+}*/
