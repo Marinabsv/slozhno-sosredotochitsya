@@ -1,4 +1,3 @@
-
 .page {
   background-color: var(--bg-color);
   font-family: var(--main-font);
@@ -21,6 +20,7 @@
   position: absolute;
   font-family: var(--main-font);
   font-size: 18px;
+  text-transform: uppercase;
   font-weight: 400;
   line-height: 25px;
   color: var(--corner-color);
@@ -82,6 +82,11 @@
   margin-inline-start: -2%;
 }
 
+@media (width < 400px) {
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
@@ -105,7 +110,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--corner-color);
 }
 
 .header__theme-menu-button_active {
@@ -134,8 +139,13 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
+    align-items: end;
+    gap: 6px;
   }
 
+  .header__theme-menu-item:not(:last-of-type) {
+    padding-right: 0;
+  }
   .header__content {
     max-inline-size: 364px;
   }
@@ -143,7 +153,7 @@
 
 @media (width <= 375px) {
   .header__content {
-    margin-block-start: 17px;
+    margin-block-start: 21px;
   }
 }
 
@@ -195,10 +205,6 @@ a:hover {
   grid-column: 2/4;
 }
 
-.content_cards article {
-  grid-column: 2/4;
-}
-
 .content_cards h2 {
   grid-column: 1;
 }
@@ -211,6 +217,15 @@ a:hover {
     column-gap: 38px;
     row-gap: 23px;
   }
+  .header__title {
+    margin-inline-start: -3%;
+  }
+}
+
+@media (width <= 375px) {
+  .header__title {
+    margin-inline-start: 0%;
+  }
 }
 
 @media (width < 620px) {
@@ -221,6 +236,10 @@ a:hover {
 
   .content__why .title-decor {
     margin-block-start: 22px;
+  }
+
+  .content__why p {
+    padding-block-end: 4px;
   }
 }
 
@@ -245,8 +264,8 @@ a:hover {
   padding-bottom: 25px;
 }
 
-.content__what article {
-  grid-column: 1;
+.content__what div {
+  grid-row: 2;
 }
 
 @media (width < 1024px) {
@@ -267,7 +286,7 @@ a:hover {
 
 @media (width <= 375px) {
   .content__what {
-    margin-block-start: 59px;
+    margin-block-start: 50px;
   }
 
   .content__what .title-decor {
@@ -275,41 +294,57 @@ a:hover {
   }
 
   .content__what p {
-    margin: 11px 0 14px 0;
+    margin: 13px 0 14px 0;
   }
 }
 
 @media (width <= 768px) {
   .content__how {
-    margin-block-start: 34px;
+    margin-block-start: 35px;
+    row-gap: 19px;
   }
 
   .content__how .section-content {
     padding-inline-start: 8px;
   }
 
+  .content__how h2 {
+    grid-row: 1/3;
+  }
+
   .title-no-weight {
     font-weight: 400;
-    margin-block-end: 16px;
+    /*margin-block-end: 16px;*/
+  }
+  .content__how h3 {
+    align-self: flex-start;
+    margin-inline-start: 8px;
+    margin-block-end: 0;
   }
 }
 
 @media (width < 768px) {
   .content__how {
     display: block;
-    margin-block-start: 22px;
+    margin-block-start: 17px;
   }
 
   .content__how .section-content {
     padding-inline-start: 0;
   }
 
-  .content__how p {
-    margin-block-start: -1px;
-  }
-
   .content__how .title-decor {
-    margin-block-start: 19px;
+    margin-block-start: 20px;
+    margin-block-end: 11px;
+  }
+}
+
+@media (width <=375px) {
+  .content__how h3 {
+    margin: 0px;
+  }
+  .content__how p {
+    padding-block-end: 4px;
   }
 }
 
@@ -327,9 +362,9 @@ a:hover {
   gap: 20px;
 }
 
-@media (width <= 375px) {
+@media (width <= 460px) {
   .pictures {
-    margin-block-start: 53px;
+    margin-block-start: 47px;
   }
   .pictures h3 {
     margin-block-end: 11px;
@@ -414,6 +449,18 @@ a:hover {
   inset-inline-start: 0%;
 }
 
+@media (width < 1024px) {
+  .decorated-zone::before {
+    inset-block-start: 2%;
+    inset-inline-end: 0%;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 2%;
+    inset-inline-start: 0%;
+  }
+}
+
 @media (width <= 375px) {
   .decorated-zone::before {
     inset-block-start: 1.5%;
@@ -424,4 +471,11 @@ a:hover {
     inset-block-end: 2%;
     inset-inline-start: 0%;
   }
+  .footer {
+    margin-block-start: 42px;
+  }
+}
+
+* {
+  outline: 1px solid green;
 }
